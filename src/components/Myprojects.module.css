@@ -1,0 +1,56 @@
+.heading{
+    text-align: center;
+    padding: 4rem 0 2rem 0;
+    font-size: 2.4rem;
+}
+
+.project-container{
+    height: auto;
+    max-width: 97%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding-bottom: 5rem;
+}
+
+.card{
+    background-color: #1a1919;
+    padding: 1.2rem 1rem;
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+}
+
+.project-title{
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.pro-details p{
+    padding-bottom: 1rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.pro-btns{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+}
+
+.pro-btns .btn{
+    padding: 0.5rem 1rem;
+}
+
+@media screen and (max-width:740px){
+    .project-container{
+        max-width: 90%;
+        margin: auto;
+        grid-template-columns: 1fr;
+    }
+}
