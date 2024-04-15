@@ -51,7 +51,7 @@ const Carddata =[{"title": "Weather App", img: pro1, "alt": "project1-img",
 
   {"title": "Portfolio", img: pro9, "alt": "project9-img", 
   "p":"Welcome to my portfolio website! Here you'll find a collection of my projects, Skills, Resume as a web developer. Feel free to explore and get to know more about me and my work.", 
-  "view": "https://sohini-portfolio-reactjs.netlify.app/",
+  "view": "https://sohini-portfolio.netlify.app/",
   "source": "https://github.com/sohinisharma/sohini-portfolio"}];
 
   export default Carddata
