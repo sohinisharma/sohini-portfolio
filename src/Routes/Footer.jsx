@@ -19,7 +19,7 @@ const Footer = () => {
         <div className="e-mail">
         <p>
         <FaMailBulk className='fa-icon'/>
-        sohini@gmail.com</p>
+        sharmasohini80@gmail.com</p>
         </div>
       </div>
 
