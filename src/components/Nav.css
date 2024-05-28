@@ -28,9 +28,10 @@
 }
 
 .logo{
-    height: 58px;
-    width: 199px;
+    height: 80px;
+    width: 80px;
     padding: 10px;
+    border-radius: 50%;
 }
 
 .hamburger{
@@ -77,6 +78,11 @@
     .hamburger{
         display: initial;
     }   
+
+    .logo{
+        height: 60px;
+        width: 60px;
+    }
 }
 
 

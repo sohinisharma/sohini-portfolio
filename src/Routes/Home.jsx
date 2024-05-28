@@ -1,6 +1,8 @@
 import React from 'react'
 import './Home.css'
 import { Link } from 'react-router-dom'
+import Resume from '../assets/CV.pdf'
+import { FaDownload } from 'react-icons/fa'
 
 
 const Home = () => {
@@ -12,7 +14,9 @@ const Home = () => {
         <h1>WEB DEVELOPER</h1>
         <div className='link-btn'>
         <Link to='/projects' className='btn'>Projects</Link>
-        <Link to='/contact' className='btn btn-light'>Contact</Link></div>
+        <a href={Resume} download="CV.pdf"><button className='btn btn-light'>
+        <FaDownload /> Resume        
+        </button></a></div>
         </div>
       </div>     
     </>
