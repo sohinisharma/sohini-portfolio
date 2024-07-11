@@ -14,37 +14,55 @@
     padding-bottom: 5rem;
 }
 
-.card{
+.card {
+    display: flex;
+    flex-direction: column;
     background-color: #1a1919;
     padding: 1.2rem 1rem;
 }
 
-.card img{
+.card img {
     width: 100%;
     height: auto;
 }
 
-.project-title{
+.project-title {
     color: #fff;
     padding: 1rem 0;
     text-align: center;
     font-size: 1.5rem;
 }
 
-.pro-details p{
+.pro-details {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.pro-details p {
     padding-bottom: 1rem;
     font-size: 1rem;
     text-align: center;
 }
 
-.pro-btns{
+.pro-btns {
     display: flex;
     justify-content: space-between;
     padding: 0.5rem 0;
+    margin-top: auto; 
+    gap: 1rem;
 }
 
-.pro-btns .btn{
+.pro-btns .btn {
     padding: 0.5rem 1rem;
+    flex: 1;
+}
+
+@media screen and (max-width:1024px){
+    .pro-btns .btn {
+        padding: 0.5rem;
+        margin: 0 10px;
+    }
 }
 
 @media screen and (max-width:740px){

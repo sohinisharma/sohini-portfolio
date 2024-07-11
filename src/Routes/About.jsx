@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import react1 from '../assets/react1.jpg'
 import react2 from '../assets/react2.jpg'
 import { FaDownload } from 'react-icons/fa'
-import Resume from '../assets/CV.pdf'
+import Resume from '../assets/Sohini CV.pdf'
 
 const About = () => {
   return (
@@ -26,7 +26,7 @@ const About = () => {
         </div>
 
         <div>
-        <a href={Resume} download="CV.pdf"><button className='btn'>
+        <a href={Resume} download="Sohini CV.pdf"><button className='btn'>
         <FaDownload /> Resume        
         </button></a></div>
         </div>
