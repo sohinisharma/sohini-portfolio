@@ -9,10 +9,10 @@ import pro8 from '../assets/project-8.jpg'
 import pro9 from '../assets/project-9.jpg'
 
 
-const Carddata =[{"title": "Weather App", img: pro1, "alt": "project1-img",
- "p":"Designed and implemented the front-end interface using HTML, CSS, and React.js, ensuring responsiveness across various devices and screen sizes.",
- "view": "https://current-weather-app-by-reactjs.netlify.app/",
- "source": "https://github.com/sohinisharma/weatherapp"},
+const Carddata =[{"title": "Portfolio", img: pro9, "alt": "project9-img", 
+    "p":"Welcome to my portfolio website! Here you'll find a collection of my projects, Skills, Resume as a web developer. Feel free to explore and get to know more about me and my work.", 
+    "view": "https://sohini-portfolio.netlify.app/",
+    "source": "https://github.com/sohinisharma/sohini-portfolio"},
 
   {"title": "Education App", img: pro2, "alt": "project2-img", 
   "p":"Developed a comprehensive education application using React.js.", 
@@ -39,7 +39,7 @@ const Carddata =[{"title": "Weather App", img: pro1, "alt": "project1-img",
   "view": "https://drumkit-using-by-javascript.netlify.app/",
   "source": "https://github.com/sohinisharma/drumkit"},
 
-  {"title": "DarkMode", img: pro7, "alt": "project7-img", 
+  {"title": "DarkMode-LightMode", img: pro7, "alt": "project7-img", 
   "p":"Developed a Dark Mode feature for a web application, allowing users to switch between light and dark color schemes for improved visibility and reduced eye strain in low-light environments. The Dark Mode implementation enhances user experience by providing a customizable interface that adapts to user preferences and environmental conditions.", 
   "view": "https://dark-light-mode-reactjs.netlify.app/",
   "source": "https://github.com/sohinisharma/darkmode"},
@@ -49,9 +49,10 @@ const Carddata =[{"title": "Weather App", img: pro1, "alt": "project1-img",
   "view": "https://login-signup-by-reactjs.netlify.app/",
   "source": "https://github.com/sohinisharma/login-signup"},
 
-  {"title": "Portfolio", img: pro9, "alt": "project9-img", 
-  "p":"Welcome to my portfolio website! Here you'll find a collection of my projects, Skills, Resume as a web developer. Feel free to explore and get to know more about me and my work.", 
-  "view": "https://sohini-portfolio.netlify.app/",
-  "source": "https://github.com/sohinisharma/sohini-portfolio"}];
+  {"title": "Weather App", img: pro1, "alt": "project1-img",
+    "p":"Designed and implemented the front-end interface using HTML, CSS, and React.js, ensuring responsiveness across various devices and screen sizes.",
+    "view": "https://current-weather-app-by-reactjs.netlify.app/",
+    "source": "https://github.com/sohinisharma/weatherapp"}];
+  
 
   export default Carddata

@@ -3,6 +3,9 @@ import './Home.css'
 import { Link } from 'react-router-dom'
 import Resume from '../assets/Sohini CV.pdf'
 import { FaDownload } from 'react-icons/fa'
+import Projectdata from '../components/Projectdata'
+import About from '../Routes/About'
+import Contact from '../Routes/Contact'
 
 
 const Home = () => {
@@ -18,7 +21,10 @@ const Home = () => {
         <FaDownload /> Resume        
         </button></a></div>
         </div>
-      </div>     
+      </div>  
+      <Projectdata/>   
+      <About/>
+      <Contact/>
     </>
   )
 }

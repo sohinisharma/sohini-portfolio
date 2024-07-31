@@ -10,7 +10,7 @@
 }
 
 .nav-container-bg{
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(0, 0, 0, 0.50);
     transition: 0.5s;
 }
 
@@ -24,7 +24,7 @@
 
 .navbar li a{
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .logo{
