@@ -12,10 +12,10 @@ const uri = "mongodb://localhost:27017/";
 app.use(bodyParser.json());
 app.use(helmet());
 
-// Enable CORS for your frontend URL
+// CORS configuration
 const corsOptions = {
-  origin: 'http://localhost:5173',
-  optionsSuccessStatus: 200 
+  origin: 'https://sohini-portfolio.netlify.app', 
+  optionsSuccessStatus: 200
 };
 
 app.use(cors(corsOptions));
@@ -23,7 +23,7 @@ app.use(cors(corsOptions));
 let db;
 
 // Connect to MongoDB
-MongoClient.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
+MongoClient.connect(uri)
   .then(client => {
     console.log('Connected to MongoDB');
     db = client.db('portfolio-data');

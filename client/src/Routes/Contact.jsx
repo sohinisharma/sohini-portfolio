@@ -21,7 +21,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/contact', formData);
+      const response = await axios.post('https://sohini-portfolio-server.vercel.app/contact', formData); 
       alert(response.data);
     } catch (error) {
       console.error('There was an error sending the message!', error);
