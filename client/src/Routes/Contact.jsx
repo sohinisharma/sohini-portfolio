@@ -23,6 +23,15 @@ const Contact = () => {
     try {
       const response = await axios.post('https://sohini-portfolio-server.vercel.app/contact', formData); 
       alert(response.data);
+      
+      // Clear form fields after successful submission
+      setFormData({
+        name: '',
+        email: '',
+        subject: '',
+        message: ''
+      });
+
     } catch (error) {
       console.error('There was an error sending the message!', error);
     }

@@ -36,13 +36,18 @@ MongoClient.connect(uri)
     process.exit(1);
   });
 
-// Routes
+// Root route with link to frontend
 app.get('/', (req, res) => {
     res.send(`<h1>Welcome to My Portfolio API click <a href="https://sohini-portfolio.netlify.app"}>here</a> to visit frontend.</h1>`);
   });
 
+  // Contact route
 app.post('/contact', (req, res) => {
   const { name, email, subject, message } = req.body;
+
+  if (!name || !email || !subject || !message) {
+    return res.status(400).send('All fields are required.');
+  }
 
   const contactMessage = {
     name,
