@@ -6,13 +6,12 @@ import helmet from 'helmet';
 
 const app = express();
 const PORT = process.env.PORT || 5000;
-const uri = "mongodb://localhost:27017/";
+const uri = "mongodb+srv://sharmasohini80:txVpB6XhM5c86Rfc@cluster0.zqyued7.mongodb.net/portfolio-data?retryWrites=true&w=majority";
 
 // Middleware
 app.use(bodyParser.json());
 app.use(helmet());
 
-// CORS configuration
 const corsOptions = {
   origin: 'https://sohini-portfolio.netlify.app', 
   optionsSuccessStatus: 200
@@ -28,12 +27,14 @@ MongoClient.connect(uri)
     console.log('Connected to MongoDB');
     db = client.db('portfolio-data');
 
-    // Start the server after successful DB connection
     app.listen(PORT, () => {
       console.log(`Server is running on port ${PORT}`);
     });
   })
-  .catch(error => console.error(error));
+  .catch(error => {
+    console.error('Failed to connect to MongoDB', error);
+    process.exit(1);
+  });
 
 // Routes
 app.post('/contact', (req, res) => {
@@ -52,7 +53,7 @@ app.post('/contact', (req, res) => {
       res.status(200).send('Message received and saved successfully!');
     })
     .catch(error => {
-      console.error(error);
+      console.error('Error inserting document:', error);
       res.status(500).send('An error occurred while saving the message.');
     });
 });
