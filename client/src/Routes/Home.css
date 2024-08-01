@@ -1,0 +1,54 @@
+.home{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.home::before{
+    content: '';
+    background-image: url('../assets/intro-img.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    margin-top: 0;
+    margin-left: 0;
+    z-index: -1;
+}
+
+.home h1{
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+}
+
+.home p{
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.mask{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-btn{
+    display: flex;
+    gap: 8px;
+}
+
+@media screen and (max-width:640px) {
+    .home h1{
+        font-size: 2rem;
+    }
+    
+    .mask p{
+        font-size: 1.4rem;
+    }
+}
