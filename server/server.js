@@ -37,6 +37,10 @@ MongoClient.connect(uri)
   });
 
 // Routes
+app.get('/', (req, res) => {
+    res.send(`<h1>Welcome to My Portfolio API click <a href="https://sohini-portfolio.netlify.app"}>here</a>to visit frontend.</h1>`);
+  });
+
 app.post('/contact', (req, res) => {
   const { name, email, subject, message } = req.body;
 
